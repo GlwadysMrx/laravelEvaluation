@@ -1,0 +1,77 @@
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  background-color:#E8E3DF;
+}
+header{
+  height: 30%;
+}
+.accueil{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.navbar{
+  width: 100%;
+  height:50%;
+  background-color: #3E484A;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.title{
+width: 50%;
+height: 100%;
+color: #EEF4F2;
+font-size: 2rem;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.sidebar{
+  width: 50%;
+  height: 100%;
+  color: #EEF4F2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items:center;
+}
+.option{
+  height: 100%;
+  width: 25%;
+
+}
+a{
+  color: inherit;
+  text-decoration: none;
+}
+main{
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.rooms{
+  width: 90%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.table{
+  width: 100%;
+  height: 100%;
+}
+.column{
+  height: 10%;
+
+}
