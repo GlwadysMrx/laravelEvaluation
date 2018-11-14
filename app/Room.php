@@ -8,10 +8,10 @@ class Room extends Model
 {
   public function location ()
   {
-    return $this->belongsTo('App\Location');
+    return $this->belongsToMany('App\Location');
   }
   public function status ()
   {
-    return $this->belongsTo('App\Status');
+    return $this->belongsToMany('App\Status');
   }
 }

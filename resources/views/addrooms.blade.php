@@ -15,21 +15,21 @@
   <form class="" action="insertroom" method="post">
     @csrf
     <label for="">Nom de la salle :</label>
-    <input required type="text" name="roomName" value="" placeholder="ex:Halle Tony Garnier">
+    <input required type="text" name="newRoom" value="" placeholder="ex:Halle Tony Garnier">
 
     <label for="">Lieu : </label>
     <select class="" name="roomLocation">
-      @foreach ($rooms as $room)
-        <option value="">
-          {{$room->location->name}}
+      @foreach ($locations as $location)
+        <option value="{{ $location->id }}">
+          {{$location->name}}
         </option>
       @endforeach
     </select>
     <label for=""> Disponibilités :</label>
     <select class="" name="roomStatus">
-      @foreach ($rooms as $room)
-        <option value="">
-          {{$room->status->name}}
+      @foreach ($statuses as $status)
+        <option value="{{ $status->id }}">
+          {{$status->name}}
         </option>
       @endforeach
     </select>

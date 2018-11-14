@@ -14,7 +14,6 @@ class View extends Controller
       $rooms = Room::all();
       $locations = Location::all();
       $statuses = Status::all();
-
       return view('welcome',[
         'rooms' => $rooms,
         'locations' => $locations,

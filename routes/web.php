@@ -14,3 +14,5 @@
 Route::get('/', 'View@listrooms');
 Route::get('/listrooms','View@listrooms');
 Route::get('/addrooms','View@addrooms');
+
+Route::post('/insertroom','Room@insertOne');
